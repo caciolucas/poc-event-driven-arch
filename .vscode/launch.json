@@ -1,0 +1,32 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Create Product",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/projectA/manage.py",
+            "args": [
+                "shell",
+                "<",
+                "./teste_event_trigger.py"
+            ],
+            "django": true
+        },
+        {
+            "name": "Run consumer",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/projectB/manage.py",
+            "args": [
+                "shell",
+                "<",
+                "./projectB/consumer.py"
+            ],
+            "django": true
+        },
+    ]
+}
